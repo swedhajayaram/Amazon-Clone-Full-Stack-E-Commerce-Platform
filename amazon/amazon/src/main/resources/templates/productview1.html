@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr th:each="p:${pro}">
+<td th:text="${p.id}"></td>
+<td th:text="${p.name}"></td>
+<td th:text="${p.quantity}"></td>
+<td th:text="${p.price}"></td>
+
+</tr>
+
+
+</table>
+
+</body>
+</html>

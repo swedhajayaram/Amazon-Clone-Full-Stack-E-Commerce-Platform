@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="/xyz" method="post">
+
+<input type="hidden" name="id" th:value="${pro.id}">
+<br><br>
+Product name
+<input type="text" name="name" th:value="${pro.name}">
+<br><br>
+Product Quantity
+<input type="text" name="quantity" th:value="${pro.quantity}">
+<br><br>
+Product Price
+<input type="text" name="price" th:value="${pro.price}">
+<br><br>
+<input type="submit">
+
+
+
+</form>
+
+</body>
+</html>

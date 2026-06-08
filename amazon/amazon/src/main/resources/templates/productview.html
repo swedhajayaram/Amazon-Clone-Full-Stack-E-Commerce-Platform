@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<table>
+<tr th:each="p:${pro}">
+<td th:text="${p.id}"></td>
+<td th:text="${p.name}"></td>
+<td th:text="${p.quantity}"></td>
+<td th:text="${p.price}"></td>
+<td><a th:href="@{/part/{id}(id=${p.id})}">particular select</a></td>
+<td><a th:href="@{/edit/{id}(id=${p.id})}">edit</a></td>
+<td><a th:href="@{/delete/{id}(id=${p.id})}">delet</a></td>
+
+
+</tr>
+
+
+</table>
+</body>
+</html>
